@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Дмитрий Шкируть](https://up.htmlacademy.ru/htmlcss/29/user/1581157).
-* Наставник: [Андрей Островский] (https://htmlacademy.ru/profile/grandmaus)
+* Наставник: [Андрей Островский](https://htmlacademy.ru/profile/grandmaus)
 
 ---
 
