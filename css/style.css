@@ -14,11 +14,13 @@
 
 body {
   font-family: "PT Sans", Arial, sans-serif;
-  font-size: 14px;
+  font-style: normal;
+  font-size: 21px;
   line-height: 21px;
   font-weight: 700;
-  color: var(--basic-black);
   text-transform: uppercase;
+  text-align: center;
+  color: var(--basic-black);
   background-color: var(--basic-white);
 }
 
@@ -32,13 +34,8 @@ img {
 }
 
 .main-navigation {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  color: var(--basic-black);
-  background-color: var(--basic-white);
 }
 
 .site-navigation {
@@ -67,186 +64,62 @@ img {
   list-style: none;
 }
 
-.features {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
+.features h1 {
   line-height: 26px;
-  color: var(--basic-black);
-  background-color: var(--basic-white);
-  text-align: center;
 }
 
-.features p {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
+.features-description {
+  font-weight: 400;
   font-size: 14px;
   line-height: 26px;
-  color: var(--light-black);
-  background-color: var(--basic-white);
 }
 
-.features-1 {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 21px;
+.features-blue-background {
   color: var(--basic-white);
   background-color: var(--basic-blue);
 }
 
-.features-1 p {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
+.features-blue-background p {
+  font-weight: 400;
   font-size: 14px;
-  line-height: 21px;
-  color: var(--basic-white);
-  background-color: var(--basic-blue);
 }
 
-.features-list {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 21px;
-  color: var(--basic-black);
-  background-color: var(--basic-white);
-}
-
-.features-list p {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
+.features-white-background p {
+  font-weight: 400;
   font-size: 14px;
-  line-height: 21px;
   color: var(--light-black);
-  background-color: var(--basic-white);
 }
 
-.features-2 {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 21px;
-  color: var(--basic-white);
-  background-color: var(--basic-blue);
-}
-
-.features-2 p {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  color: var(--basic-white);
-  background-color: var(--basic-blue);
-}
-
-.features-3 {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 21px;
-  color: var(--basic-black);
+.features-silver-background {
   background-color: var(--basic-silver);
 }
 
-.features-3 p {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
+.features-silver-background p {
+  font-weight: 400;
   font-size: 14px;
-  line-height: 21px;
   color: var(--light-black);
-  background-color: var(--basic-silver);
-}
-
-.features-4 {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 21px;
-  color: var(--basic-black);
-  background-color: var(--basic-silver);
-}
-
-.features-4 p {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  color: var(--light-black);
-  background-color: var(--basic-silver);
-}
-
-.features-5 {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 21px;
-  color: var(--basic-black);
-  background-color: var(--basic-silver);
-}
-
-.features-5 p {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  color: var(--light-black);
-  background-color: var(--basic-silver);
 }
 
 .interested {
   /* в фигме визуально разный размер и толщина, но их нельзя посмотреть отдельно */
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
   font-size: 30px;
   line-height: 24px;
-  color: var(--basic-black);
-  background-color: var(--basic-white);
-  text-align: center;
 }
 
 .footer {
-  color: var(--basic-black);
   background-color: var(--basic-footer);
 }
 
 .footer-contacts {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
   line-height: 26px;
-  text-align: center;
 }
 
 .footer-contacts a {
   color: var(--basic-black);
 }
 
-.footer-social {
-  text-align: center;
-  color: var(--basic-black);
-}
-
 .footer-copyright {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 26px;
 }
