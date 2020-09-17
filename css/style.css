@@ -3,13 +3,13 @@
   --light-black: #333333;
   --basic-white: #ffffff;
   --basic-blue: #81b3d2;
-  --basic-silver: #eeeeee;
+  --basic-gray: #eeeeee;
   --basic-brown: #766357;
-  --basic-footer: rgba(255, 255, 255, 0.9);
-  --social-hover: #669ec0;
-  --social-focus: #5496bd;
-  --copyright: #231f20;
-  --copyright-focus: #bdbbbc;
+  --white-footer: rgba(255, 255, 255, 0.9);
+  --blue-social-hover: #669ec0;
+  --blue-social-focus: #5496bd;
+  --black-copyright: #231f20;
+  --gray-copyright-focus: #bdbbbc;
 }
 
 body {
@@ -74,30 +74,20 @@ img {
   line-height: 26px;
 }
 
-.features-blue-background {
+.features-item p {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--light-black);
+}
+
+.features-item-blue,
+.features-item-blue p {
   color: var(--basic-white);
   background-color: var(--basic-blue);
 }
 
-.features-blue-background p {
-  font-weight: 400;
-  font-size: 14px;
-}
-
-.features-white-background p {
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--light-black);
-}
-
-.features-silver-background {
-  background-color: var(--basic-silver);
-}
-
-.features-silver-background p {
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--light-black);
+.features-item-gray {
+  background-color: var(--basic-gray);
 }
 
 .interested {
@@ -107,7 +97,7 @@ img {
 }
 
 .footer {
-  background-color: var(--basic-footer);
+  background-color: var(--white-footer);
 }
 
 .footer-contacts {
@@ -133,17 +123,17 @@ img {
 }
 
 .social-button:hover {
-  color: var(--social-hover);
+  color: var(--blue-social-hover);
 }
 
 .social-button:focus {
-  color: var(--social-focus);
+  color: var(--blue-social-focus);
   mix-blend-mode: normal;
   opacity: 0.3;
 }
 
 .footer-copyright {
-  color: var(--copyright);
+  color: var(--black-copyright);
 }
 
 .footer-copyright a:hover {
@@ -151,5 +141,5 @@ img {
 }
 
 .footer-copyright a:focus {
-  color: var(--copyright-focus);
+  color: var(--gray-copyright-focus);
 }
