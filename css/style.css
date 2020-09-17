@@ -1,0 +1,282 @@
+:root {
+  --basic-black: #000000;
+  --light-black: #333333;
+  --basic-white: #ffffff;
+  --basic-blue: #81b3d2;
+  --basic-silver: #eeeeee;
+  --basic-brown: #766357;
+  --basic-footer: rgba(255, 255, 255, 0.9);
+  --social-hover: #669ec0;
+  --social-focus: #5496bd;
+  --copyright: #231f20;
+  --copyright-focus: #bdbbbc;
+}
+
+body {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover {
+  color: var(--basic-blue);
+}
+
+.site-navigation a:focus {
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.site-navigation a:active {
+  color: var(--basic-brown);
+}
+
+.features ul {
+  list-style: none;
+}
+
+.features {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  text-align: center;
+}
+
+.features p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--light-black);
+  background-color: var(--basic-white);
+}
+
+.features-1 {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.features-1 p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.features-list {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.features-list p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--light-black);
+  background-color: var(--basic-white);
+}
+
+.features-2 {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.features-2 p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.features-3 {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+  background-color: var(--basic-silver);
+}
+
+.features-3 p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--light-black);
+  background-color: var(--basic-silver);
+}
+
+.features-4 {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+  background-color: var(--basic-silver);
+}
+
+.features-4 p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--light-black);
+  background-color: var(--basic-silver);
+}
+
+.features-5 {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+  background-color: var(--basic-silver);
+}
+
+.features-5 p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--light-black);
+  background-color: var(--basic-silver);
+}
+
+.interested {
+  /* в фигме визуально разный размер и толщина, но их нельзя посмотреть отдельно */
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  text-align: center;
+}
+
+.footer {
+  color: var(--basic-black);
+  background-color: var(--basic-footer);
+}
+
+.footer-contacts {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.footer-contacts a {
+  color: var(--basic-black);
+}
+
+.footer-social {
+  text-align: center;
+  color: var(--basic-black);
+}
+
+.footer-copyright {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: var(--basic-blue);
+}
+
+.social-button:hover {
+  color: var(--social-hover);
+}
+
+.social-button:focus {
+  color: var(--social-focus);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.footer-copyright {
+  color: var(--copyright);
+}
+
+.footer-copyright a:hover {
+  color: var(--basic-blue);
+}
+
+.footer-copyright a:focus {
+  color: var(--copyright-focus);
+}
