@@ -158,21 +158,21 @@ img {
   list-style: none;
 }
 
-h3 {
+.sorted-item-title {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
 }
 
-h3 a {
+.sorted-item-title a {
   color: var(--basic-black);
 }
 
-h3 a:hover {
+.sorted-item-title a:hover {
   color: var(--basic-blue);
 }
 
-h3 a:focus {
+.sorted-item-title a:focus {
   color: var(--basic-black);
   mix-blend-mode: normal;
   opacity: 0.3;
