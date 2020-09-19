@@ -10,6 +10,10 @@
   --blue-social-focus: #5496bd;
   --black-copyright: #231f20;
   --gray-copyright-focus: #bdbbbc;
+  --gray-rating: #666666;
+  --light-gray: #f2f2f2;
+  --brown-hover: #604e43;
+  --brown-focus: #503e33;
 }
 
 body {
@@ -142,4 +146,78 @@ img {
 
 .footer-copyright a:focus {
   color: var(--gray-copyright-focus);
+}
+
+/* страница hotels */
+
+.current-page a {
+  color: var(--basic-brown);
+}
+
+.sorted-list {
+  list-style: none;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+h3 a {
+  color: var(--basic-black);
+}
+
+h3 a:hover {
+  color: var(--basic-blue);
+}
+
+h3 a:focus {
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.sorted-item {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.sorted-item-info {
+  color: var(--light-black);
+}
+
+.sorted-item-details {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.sorted-item-details:hover {
+  background-color: var(--blue-social-hover);
+}
+
+.sorted-item-details:focus {
+  background-color: var(--blue-social-focus);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.sorted-item-to-book {
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+}
+
+.sorted-item-to-book:hover {
+  background-color: var(--brown-hover);
+}
+
+.sorted-item-to-book:focus {
+  background-color: var(--brown-focus);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.sorted-item-rate {
+  color: var(--gray-rating);
+  background-color: var(--light-gray);
 }
