@@ -90,6 +90,16 @@ img {
   background-color: var(--basic-blue);
 }
 
+.features-item-white {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.features-item-white p {
+  color: var(--light-black);
+  background-color: var(--basic-white);
+}
+
 .features-item-gray {
   background-color: var(--basic-gray);
 }
