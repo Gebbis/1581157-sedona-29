@@ -28,6 +28,22 @@ body {
   background-color: var(--basic-white);
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
 a {
   text-decoration: none;
 }
@@ -42,8 +58,14 @@ img {
   line-height: 26px;
 }
 
+.main-logo {
+  grid-column: 3 / 4;
+}
+
 .site-navigation {
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 138px 1fr 1fr;
 }
 
 .site-navigation a {
@@ -104,6 +126,41 @@ img {
   background-color: var(--basic-gray);
 }
 
+.features {
+  display: grid;
+  grid-template-rows: 216px 1fr;
+}
+
+.features-list {
+  display: grid;
+  grid-template-rows: 586px 256px 256px;
+}
+
+.features-item-blue-first {
+  display: grid;
+  grid-template-rows: 1fr 330px;
+}
+
+.features-item-blue-first-list {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.features-item-white-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.features-item-blue-second {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.features-item-gray-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .interested {
   /* в фигме визуально разный размер и толщина, но их нельзя посмотреть отдельно */
   font-size: 30px;
@@ -112,6 +169,8 @@ img {
 
 .footer {
   background-color: var(--white-footer);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer-contacts {

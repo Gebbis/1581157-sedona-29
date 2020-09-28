@@ -11,7 +11,7 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
-  <body class="page-body">
+  <body class="page-body container">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-logo">
@@ -29,6 +29,7 @@
           <li>
             <a href="blank.html">Фото и видео</a>
           </li>
+
           <li>
             <a href="blank.html">Карта штата</a>
           </li>
@@ -49,22 +50,28 @@
         />
       </div>
       <section class="features">
-        <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p class="features-description">
-          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-        </p>
+        <div>
+          <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="features-description">
+            Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+          </p>
+        </div>
         <ul class="features-list">
-          <li class="features-item features-item-blue">
-            <img
-              src="img/real-town.jpg"
-              width="800"
-              height="256"
-              alt="Фото городка Седона"
-            />
-            <h3>Настоящий городок</h3>
-            <p>— №1 —</p>
-            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-            <ul>
+          <li class="features-item features-item-blue features-item-blue-first">
+            <div class="features-item-blue-first-list">
+              <div>
+                <h3>Настоящий городок</h3>
+                <p>— №1 —</p>
+                <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+              <img
+                src="img/real-town.jpg"
+                width="800"
+                height="256"
+                alt="Фото городка Седона"
+              />
+            </div>
+            <ul class="features-item-white-list">
               <li class="features-item features-item-white">
                 <h4>Жильё</h4>
                 <p>
@@ -85,32 +92,38 @@
               </li>
             </ul>
           </li>
-          <li class="features-item features-item-blue">
+          <li
+            class="features-item features-item-blue features-item-blue-second"
+          >
             <img
               src="img/devils-bridge.jpg"
               width="800"
               height="256"
               alt="Фото моста Дьявола"
             />
-            <h3>Там есть Мост дьявола</h3>
-            <p>— №2 —</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <div>
+              <h3>Там есть Мост дьявола</h3>
+              <p>— №2 —</p>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
           </li>
-          <li class="features-item features-item-gray">
-            <h3>небольшая площадь</h3>
-            <p>— №3 —</p>
-            <p>все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="features-item features-item-gray">
-            <h3>красивая дорога</h3>
-            <p>— №4 —</p>
-            <p>ехать в седону из лас-вегаса совсем не скучно!</p>
-          </li>
-          <li class="features-item features-item-gray">
-            <h3>мало туристов</h3>
-            <p>— №5 —</p>
-            <p>большинство едет в гранд каньон и толпится там</p>
-          </li>
+          <div class="features-item-gray-list">
+            <li class="features-item features-item-gray">
+              <h3>небольшая площадь</h3>
+              <p>— №3 —</p>
+              <p>все достопримечательности находятся очень близко</p>
+            </li>
+            <li class="features-item features-item-gray">
+              <h3>красивая дорога</h3>
+              <p>— №4 —</p>
+              <p>ехать в седону из лас-вегаса совсем не скучно!</p>
+            </li>
+            <li class="features-item features-item-gray">
+              <h3>мало туристов</h3>
+              <p>— №5 —</p>
+              <p>большинство едет в гранд каньон и толпится там</p>
+            </li>
+          </div>
         </ul>
       </section>
       <section class="interested">
