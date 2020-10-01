@@ -259,6 +259,22 @@ img {
 
 .sorted-list {
   list-style: none;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 0;
+  margin: 0;
+  row-gap: 1px;
+}
+
+.sorted-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr min-content;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.sorted-item a {
+  margin: auto;
 }
 
 .sorted-item-title {
@@ -281,12 +297,8 @@ img {
   opacity: 0.3;
 }
 
-.sorted-item {
-  font-weight: 400;
-  font-size: 14px;
-}
-
-.sorted-item-info {
+.sorted-item-info-hotel-price,
+.sorted-item-info-hotel-type {
   color: var(--light-black);
 }
 
@@ -323,4 +335,19 @@ img {
 .sorted-item-rate {
   color: var(--gray-rating);
   background-color: var(--light-gray);
+}
+
+.hotels-main-header {
+  display: none;
+}
+
+.main-hotels-page {
+  display: grid;
+  grid-template-rows: 217px 540px;
+}
+
+.hotels-sorted-form {
+  display: grid;
+  grid-template-rows: 1fr 450px;
+  row-gap: 1px;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
     <title>Гостиницы - HTML Academy: Седона</title>
@@ -11,7 +11,7 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
-  <body class="page-body inner-page">
+  <body class="page-body container">
     <header class="main-header">
       <nav class="main-navigation">
         <a href="index.html" class="main-logo">
@@ -39,22 +39,22 @@
       </nav>
     </header>
 
-    <main class="main">
-      <h1>Гостиницы</h1>
-      <!-- скроем -->
+    <main class="main main-hotels-page">
+      <h1 class="hotels-main-header">Гостиницы</h1>
+      <!-- скрыл -->
       <section>
-        <h2>Фильтр гостиниц</h2>
+        <h2 class="hotels-filter-form-header">Фильтр гостиниц</h2>
+        <!-- скроем, оставил видимой, чтобы секция не была пустой -->
         <!-- Здесь будет форма фильтра -->
       </section>
-      <section>
-        <h2>Список гостиниц</h2>
-        <!-- скроем -->
-        <!-- Здесь будет форма сортировки -->
+      <section class="hotels-sorted-form">
+        <div class="hotels-sorted-form-header">
+          <h2>Список гостиниц</h2>
+          <!-- скроем, оставил видимой, чтобы секция не была пустой -->
+          <!-- Здесь будет форма сортировки -->
+        </div>
         <ul class="sorted-list">
           <li class="sorted-item">
-            <h3 class="sorted-item-title">
-              <a href="blank.html">Amara Resort & Spa</a>
-            </h3>
             <a href="blank.html">
               <img
                 src="img/amara-resort.jpg"
@@ -63,16 +63,18 @@
                 alt="Фото гостиницы Amara Resort & Spa"
               />
             </a>
-            <p class="sorted-item-info">гостиница</p>
-            <p class="sorted-item-info">от 4000 р.</p>
-            <a class="sorted-item-details" href="blank.html">Подробнее</a>
-            <a class="sorted-item-to-book" href="blank.html">Забронировать</a>
+            <div class="sorted-item-information-block">
+              <h3 class="sorted-item-title">
+                <a href="blank.html">Amara Resort & Spa</a>
+              </h3>
+              <p class="sorted-item-info-hotel-type">гостиница</p>
+              <p class="sorted-item-info-hotel-price">от 4000 р.</p>
+              <a class="sorted-item-details" href="blank.html">Подробнее</a>
+              <a class="sorted-item-to-book" href="blank.html">Забронировать</a>
+            </div>
             <p class="sorted-item-rate">Рейтинг: 8,5</p>
           </li>
           <li class="sorted-item">
-            <h3 class="sorted-item-title">
-              <a href="blank.html">Desert Quail Inn</a>
-            </h3>
             <a href="blank.html">
               <img
                 src="img/desert-quail.jpg"
@@ -81,16 +83,18 @@
                 alt="Фото мотеля Desert Quail Inn"
               />
             </a>
-            <p class="sorted-item-info">Мотель</p>
-            <p class="sorted-item-info">от 3000 р.</p>
-            <a class="sorted-item-details" href="blank.html">Подробнее</a>
-            <a class="sorted-item-to-book" href="blank.html">Забронировать</a>
+            <div class="sorted-item-information-block">
+              <h3 class="sorted-item-title">
+                <a href="blank.html">Desert Quail Inn</a>
+              </h3>
+              <p class="sorted-item-info-hotel-type">Мотель</p>
+              <p class="sorted-item-info-hotel-price">от 3000 р.</p>
+              <a class="sorted-item-details" href="blank.html">Подробнее</a>
+              <a class="sorted-item-to-book" href="blank.html">Забронировать</a>
+            </div>
             <p class="sorted-item-rate">Рейтинг: 8,9</p>
           </li>
           <li class="sorted-item">
-            <h3 class="sorted-item-title">
-              <a href="blank.html">Villas at Poco Diablo</a>
-            </h3>
             <a href="blank.html">
               <img
                 src="img/villas-at-poco.jpg"
@@ -99,10 +103,15 @@
                 alt="Фото апартаментов Villas at Poco Diablo"
               />
             </a>
-            <p class="sorted-item-info">Апартаменты</p>
-            <p class="sorted-item-info">от 2000 р.</p>
-            <a class="sorted-item-details" href="blank.html">Подробнее</a>
-            <a class="sorted-item-to-book" href="blank.html">Забронировать</a>
+            <div class="sorted-item-information-block">
+              <h3 class="sorted-item-title">
+                <a href="blank.html">Villas at Poco Diablo</a>
+              </h3>
+              <p class="sorted-item-info-hotel-type">Апартаменты</p>
+              <p class="sorted-item-info-hotel-price">от 2000 р.</p>
+              <a class="sorted-item-details" href="blank.html">Подробнее</a>
+              <a class="sorted-item-to-book" href="blank.html">Забронировать</a>
+            </div>
             <p class="sorted-item-rate">Рейтинг: 9,2</p>
           </li>
         </ul>
@@ -112,7 +121,7 @@
     <footer class="footer">
       <section class="footer-contacts">
         <h2>Связаться с нами</h2>
-        <!-- скроем-->
+        <!-- скрыл-->
         <p>#visitsedona</p>
         <p>
           тел:
@@ -121,8 +130,8 @@
       </section>
       <section class="footer-social">
         <h2>Социальные сети</h2>
-        <!-- скроем-->
-        <ul>
+        <!-- скрыл-->
+        <ul class="social-buttons-list">
           <li>
             <a class="social-button" href="https://twitter.com">Twitter</a>
           </li>
