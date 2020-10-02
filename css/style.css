@@ -266,17 +266,6 @@ img {
   row-gap: 1px;
 }
 
-.sorted-item {
-  display: grid;
-  grid-template-columns: 1fr 1fr min-content;
-  font-weight: 400;
-  font-size: 14px;
-}
-
-.sorted-item a {
-  margin: auto;
-}
-
 .sorted-item-title {
   font-weight: 700;
   font-size: 21px;
@@ -350,4 +339,58 @@ img {
   display: grid;
   grid-template-rows: 1fr 450px;
   row-gap: 1px;
+}
+
+.sorted-item {
+  display: grid;
+  grid-template-columns: min-content auto min-content;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.sorted-item-information-block {
+  width: 265px;
+  display: grid;
+  grid-template-columns: 110px 142px;
+  grid-template-rows: auto auto;
+  margin-left: 30px;
+  gap: 6px;
+  text-align: left;
+}
+
+.sorted-item-details {
+  width: 110px;
+  height: 27px;
+}
+
+.sorted-item-to-book {
+  width: 142px;
+  height: 27px;
+}
+
+.sorted-item-rating-block {
+  margin-bottom: 30px;
+  margin-right: 73px;
+}
+
+.sorted-item-rate {
+  width: 110px;
+  height: 27px;
+}
+
+.sorted-item-hotel-photo {
+  width: 135px;
+  height: 90px;
+  margin: 30px 0;
+  margin-left: 73px;
+}
+
+.sorted-item-left-info-block,
+.sorted-item-left-right-block {
+  margin-bottom: 30px;
+}
+
+.sorted-item-title {
+  grid-column: 1 / -1;
+  margin-top: 22px;
 }
