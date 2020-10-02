@@ -352,8 +352,9 @@ img {
   width: 265px;
   display: grid;
   grid-template-columns: 110px 142px;
-  grid-template-rows: auto auto;
+  grid-template-rows: 45px 80px;
   margin-left: 30px;
+  margin-bottom: 30px;
   gap: 6px;
   text-align: left;
 }
@@ -383,11 +384,6 @@ img {
   height: 90px;
   margin: 30px 0;
   margin-left: 73px;
-}
-
-.sorted-item-left-info-block,
-.sorted-item-left-right-block {
-  margin-bottom: 30px;
 }
 
 .sorted-item-title {
