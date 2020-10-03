@@ -346,7 +346,7 @@ img {
   grid-template-columns: min-content auto min-content;
   font-weight: 400;
   font-size: 14px;
-  padding: 30px 73px;
+  padding: 23.5px 73px;
 }
 
 .sorted-item-information-block {
@@ -354,19 +354,20 @@ img {
   display: grid;
   grid-template-columns: 110px 142px;
   grid-template-rows: 27px 60px;
-  margin-left: 34px;
+  margin-left: 29px;
   gap: 6px;
   text-align: left;
 }
 
 .sorted-item-left-info-block,
 .sorted-item-right-info-block {
-  margin-left: -5px;
+  margin: 0;
 }
 
 .sorted-item-info-hotel-type,
 .sorted-item-info-hotel-price {
-  margin-top: -6px;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .sorted-item-details {
@@ -384,10 +385,10 @@ img {
 .sorted-item-hotel-photo {
   width: 135px;
   height: 90px;
+  padding-top: 6.5px;
 }
 
 .sorted-item-title {
   grid-column: 1 / -1;
-  margin-top: -8px;
-  margin-left: -5px;
+  margin: 0;
 }
