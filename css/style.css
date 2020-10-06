@@ -72,19 +72,32 @@ img {
   list-style: none;
   display: flex;
   margin: 0;
-  padding: 15px 72px;
+  padding: 15px 0;
 }
 
+.site-navigation li:nth-child(1),
 .site-navigation li:nth-child(2) {
-  margin-left: 134px;
+  box-sizing: border-box;
+  width: 300px;
+  text-align: left;
 }
 
-.site-navigation li:nth-child(3) {
-  margin-left: 418px;
-  margin-right: 147px;
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+  box-sizing: border-box;
+  width: 300px;
+  text-align: right;
 }
 
-.site-navigation a {
+.site-navigation li:nth-child(1) {
+  padding-left: 72px;
+}
+
+.site-navigation li:nth-child(4) {
+  padding-right: 72px;
+}
+
+*/ .site-navigation a {
   color: var(--basic-black);
 }
 
@@ -165,9 +178,8 @@ img {
   flex-wrap: wrap;
 }
 
-.features div:first-child {
+.features-welcome-text {
   width: 1200px;
-  height: 216px;
 }
 
 .features-list {
@@ -186,9 +198,8 @@ img {
   min-height: 256px;
 }
 
-.features-item-blue div {
+.features-item-blue-description {
   width: 400px;
-  height: 256px;
 }
 
 .features-item-white-list {
@@ -197,13 +208,11 @@ img {
 
 .features-item-white {
   width: 400px;
-  height: 330px;
   flex-grow: 1;
 }
 
 .features-item-gray {
   width: 400px;
-  height: 256px;
   flex-grow: 1;
 }
 
@@ -214,9 +223,7 @@ img {
 .footer {
   background-color: var(--white-footer);
   display: flex;
-  justify-content: space-between;
-  padding-left: 111px;
-  padding-right: 138px;
+  justify-content: space-around; /* убрал падинги, сделаю когда соц сети будут иконками */
 }
 
 .footer h2 {
