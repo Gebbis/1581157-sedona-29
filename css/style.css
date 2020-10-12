@@ -15,6 +15,7 @@
   --brown-hover: #604e43;
   --brown-focus: #503e33;
   --gray-toggle: #ababab;
+  --disabled-gray: #6A6A6A;
 }
 
 body {
@@ -94,10 +95,8 @@ img {
 }
 
 .main-image img {
-  position: absolute;
+  position: relative;
   top: 75px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .main-image::after {
@@ -287,31 +286,27 @@ img {
 .features-item-white::before {
   content: "";
   position: absolute;
-}
-
-.features-item-white:first-child::before {
-  width: 75px;
-  height: 72px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.features-item-white-left::before {
+  width: 75px;
+  height: 72px;
   top: 60px;
   background-image: url("../img/icon-1.svg");
 }
 
-.features-item-white:nth-child(2)::before {
+.features-item-white-center::before {
   width: 75px;
   height: 70px;
-  left: 50%;
-  transform: translateX(-50%);
   top: 60px;
   background-image: url("../img/icon-2.svg");
 }
 
-.features-item-white:last-child::before {
+.features-item-white-right::before {
   width: 64px;
   height: 77px;
-  left: 50%;
-  transform: translateX(-50%);
   top: 55px;
   background-image: url("../img/icon-3.svg");
 }
@@ -334,7 +329,7 @@ img {
   padding-top: 7px;
 }
 
-.interested button {
+.interested-search-button {
   position: absolute;
   width: 568px;
   height: 86px;
@@ -350,13 +345,21 @@ img {
   background-color: var(--basic-brown);
 }
 
+.interested-search-button:hover {
+  background-color: var(--brown-hover);
+}
+
+.interested-search-button:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: var(--brown-focus);
+}
+  
 .hotel-search {
   box-sizing: border-box;
   position: absolute;
   font-weight: 700;
   line-height: 26px;
-  width: 568px;
-  height: 395px;
+  width: 568px; /* убрал высоту, кнопка вышла за рамки div'а, когда посмотрю формы, починить */
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
@@ -421,11 +424,29 @@ img {
   margin-right: 40px;
 }
 
-.hotel-search button {
+.hotel-search-button {
+  position: absolute;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
   width: 458px;
   height: 58px;
-  top: 283px;
+  text-transform: uppercase;
+  border: none;
+  top: 282px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--basic-white);
   background-color: var(--basic-blue);
+}
+
+.hotel-search-button:hover {
+  background-color: var(--blue-social-hover);
+}
+
+.hotel-search-button:focus { /* при нажатии появляется border, норм ли это? */
+  color: rgba(255, 255, 255, 0.3);
+  background-color: var(--blue-social-focus);
 }
 
 .map img {
@@ -516,10 +537,7 @@ img {
   content: "";
 }
 
-/* не знаю как у псевдоэлементов сделать надпись на случай не загрузки контента */
-
 .social-button-twitter::before {
-  content: "";
   width: 17px;
   height: 17px;
   background-image: url(../img/twitter.svg);
@@ -626,10 +644,9 @@ img {
 
 .sorted-item-details {
   box-sizing: border-box;
-  padding-top: 3px;
+  padding: 3px 0;
   display: block;
   width: 110px;
-  height: 27px;
   text-align: center;
   font-weight: 700;
   color: var(--basic-white);
@@ -642,16 +659,14 @@ img {
 
 .sorted-item-details:focus {
   background-color: var(--blue-social-focus);
-  mix-blend-mode: normal;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .sorted-item-to-book {
   box-sizing: border-box;
-  padding-top: 3px;
+  padding: 3px 0;
   display: block;
   width: 142px;
-  height: 27px;
   text-align: center;
   font-weight: 700;
   color: var(--basic-white);
@@ -664,8 +679,7 @@ img {
 
 .sorted-item-to-book:focus {
   background-color: var(--brown-focus);
-  mix-blend-mode: normal;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .sorted-item-rating-block {
@@ -673,18 +687,30 @@ img {
   display: block;
   display: flex;
   flex-direction: column-reverse;
+  justify-content: space-between;
+  padding-top: 6px;
   padding-bottom: 2px;
 }
 
-.sorted-item-rating-block::before {
-  /* пока сделал 1 звезду, надо уточнить img или нет */
-  position: absolute;
-  content: "";
+.sorted-item-stars {
   width: 19px;
   height: 17px;
+  margin: 0;
+  margin-left: auto;
   background-image: url(../img/star.svg);
-  right: 0;
-  top: 6px;
+  background-repeat: space;
+}
+
+.stars-two {
+  width: 42px;
+}
+
+.stars-three {
+  width: 66px;
+}
+
+.stars-four {
+  width: 91px;
 }
 
 .sorted-item-rate {
@@ -771,36 +797,40 @@ img {
   background-image: url(../img/checkbox-off.svg);
 }
 
-.filter-input-checkbox:checked + label::after {
-  content: "";
-  position: absolute;
-  position: absolute;
-  left: -40px;
-  top: 0;
+.filter-input-checkbox:checked + label::before {
   width: 27px;
   height: 23px;
   background-image: url(../img/checkbox-on.svg);
 }
 
-.range-filter {
-  position: relative;
+.filter-input-checkbox:checked:disabled + label::before {
+  background-image: url(../img/checkbox-on-disabled.svg);
+}
+
+.filter-input-checkbox:disabled + label::before {
+  background-image: url(../img/checkbox-off-disabled.svg);
 }
 
 .range-filter button {
-  position: absolute;
+  position: relative;
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
   line-height: 21px;
   color: var(--basic-white);
   width: 137px;
-  height: 36px;
+  padding: 6px 0;
   border: 2px solid var(--basic-white);
   box-sizing: border-box;
   border-radius: 2px;
   background-color: transparent;
-  bottom: 1px;
+  top: 15px;
   left: 85px;
+}
+
+.range-filter button:hover {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
 }
 
 .range-controls {
@@ -835,6 +865,12 @@ img {
   border-radius: 50%;
   box-shadow: 0 2px 0 0 rgba(171, 171, 171, 0.3);
   cursor: pointer;
+}
+
+.range-controls .toggle:hover {
+  width: 5px;
+  height: 5px;
+  border: 9px solid var(--basic-white);
 }
 
 .range-controls .toggle-min {
