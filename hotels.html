@@ -42,10 +42,65 @@
     <main class="main main-hotels-page">
       <h1 class="hotels-main-header">Гостиницы</h1>
       <!-- скрыл -->
-      <section>
-        <h2 class="hotels-filter-form-header">Фильтр гостиниц</h2>
-        <!-- скроем, оставил видимой, чтобы секция не была пустой -->
+      <section class="hotels-filter-form">
+        <h2 class="hotels-filter-form-header visually-hidden">Фильтр гостиниц</h2>
+        <!-- скрыл -->
         <!-- Здесь будет форма фильтра -->
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li class="filter-option filter-checkbox">
+              <input class="visually-hidden filter-input-checkbox filter-input"  type="checkbox" name="pool" id="filter-pool" checked>
+              <label for="filter-pool">Бассейн</label>
+            </li>
+            <li class="filter-option filter-checkbox">
+              <input class="visually-hidden filter-input-checkbox filter-input"  type="checkbox" name="parking" id="filter-parking">
+              <label for="filter-parking">Парковка</label>
+            </li>
+            <li class="filter-option filter-checkbox">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="wifi" id="filter-wifi">
+              <label for="filter-wifi">Wi-Fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li class="filter-option filter-checkbox">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
+              <label for="filter-hotel">Гостиница</label>
+            </li>
+            <li class="filter-option filter-checkbox">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="motel" id="filter-motel" checked>
+              <label for="filter-motel">Мотель</label>
+            </li>
+            <li class="filter-option filter-checkbox">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="apartments" id="filter-apartments" checked>
+              <label for="filter-apartments">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="range-filter">
+          <legend>Стоимость в сутки (Р):</legend>
+          <div>
+            <div class="price-controls">
+              <label class="min-price">
+                от <input type="number" name="min-price" value="0">
+              </label>
+              <label class="max-price">
+                до <input type="number" name="max-price" value="3000">
+              </label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+          </div>
+          <button>Показать</button>
+        </fieldset>
       </section>
       <section class="hotels-sorted-form">
         <div class="hotels-sorted-form-header">
@@ -166,23 +221,15 @@
         <!-- скрыл-->
         <ul class="social-buttons-list">
           <li>
-            <a class="social-button" href="https://twitter.com">
-              <img src="img/twitter.svg" width="17" height="17" alt="Twitter" />
+            <a class="social-button social-button-twitter" href="https://twitter.com">
             </a>
           </li>
           <li>
-            <a class="social-button" href="https://Facebook.com">
-              <img
-                src="img/fb-icon.svg"
-                width="12"
-                height="22"
-                alt="Facebook"
-              />
+            <a class="social-button social-button-facebook" href="https://Facebook.com">
             </a>
           </li>
           <li>
-            <a class="social-button" href="https://Youtube.com">
-              <img src="img/youtube.svg" width="20" height="16" alt="Youtube" />
+            <a class="social-button social-button-youtube" href="https://Youtube.com">
             </a>
           </li>
         </ul>
