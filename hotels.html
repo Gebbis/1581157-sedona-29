@@ -103,17 +103,29 @@
     </section>
     <section class="hotels-sorted-form">
       <div class="hotels-sorted-form-header">
-        <h2>Список гостиниц</h2>
-        <!-- скроем, оставил видимой, чтобы секция не была пустой -->
-        <!-- Здесь будет форма сортировки -->
+        <h2 class="visually-hidden">Список гостиниц</h2>
+        <!-- скрыл -->
+        <p class="sorting-found">Найдено: 3</p>
+        <p class="sorting-quantity">Сортировка:</p>
+        <ul>
+          <li>
+            <a class="sorting-link" href="blank.html">По цене</a>
+          </li>
+          <li>
+            <a class="sorting-link" href="blank.html">По типу</a>
+          </li>
+          <li>
+            <a class="sorting-link" href="blank.html">По рейтингу</a>
+          </li>
+        </ul>
+        <a class="sorting-arrow sorting-arrow-up" href="blank.html"></a>
+        <a class="sorting-arrow sorting-arrow-down" href="blank.html"></a>
       </div>
       <ul class="sorted-list">
         <li class="sorted-item">
-          <div class="sorted-item-hotel-photo">
-            <a href="blank.html">
-              <img src="img/amara-resort.jpg" width="135" height="90" alt="Фото гостиницы Amara Resort & Spa" />
-            </a>
-          </div>
+          <a class="sorted-item-hotel-photo" href="blank.html">
+            <img src="img/amara-resort.jpg" width="135" height="90" alt="Фото гостиницы Amara Resort & Spa" />
+          </a>
           <div class="sorted-item-information-block">
             <h3 class="sorted-item-title">
               <a href="blank.html">Amara Resort & Spa</a>
@@ -133,11 +145,9 @@
           </div>
         </li>
         <li class="sorted-item">
-          <div class="sorted-item-hotel-photo">
-            <a href="blank.html">
-              <img src="img/desert-quail.jpg" width="135" height="90" alt="Фото мотеля Desert Quail Inn" />
-            </a>
-          </div>
+          <a class="sorted-item-hotel-photo" href="blank.html">
+            <img src="img/desert-quail.jpg" width="135" height="90" alt="Фото мотеля Desert Quail Inn" />
+          </a>
           <div class="sorted-item-information-block">
             <h3 class="sorted-item-title">
               <a href="blank.html">Desert Quail Inn</a>
@@ -157,11 +167,9 @@
           </div>
         </li>
         <li class="sorted-item">
-          <div class="sorted-item-hotel-photo">
-            <a href="blank.html">
-              <img src="img/villas-at-poco.jpg" width="135" height="90" alt="Фото апартаментов Villas at Poco Diablo" />
-            </a>
-          </div>
+          <a class="sorted-item-hotel-photo" href="blank.html">
+            <img src="img/villas-at-poco.jpg" width="135" height="90" alt="Фото апартаментов Villas at Poco Diablo" />
+          </a>
           <div class="sorted-item-information-block">
             <h3 class="sorted-item-title">
               <a href="blank.html">Villas at Poco Diablo</a>
@@ -191,7 +199,7 @@
       <p>#visitsedona</p>
       <p>
         тел:
-        <a class="footer-phone" href="tel:+74956660166">+7 (495) 666-01-66</a>
+        <a class="footer-phone" href="tel:+74956660166">+7(495) 666-01-66</a>
       </p>
     </section>
     <section class="footer-social">
