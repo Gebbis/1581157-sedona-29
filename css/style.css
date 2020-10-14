@@ -993,34 +993,21 @@ img {
 }
 
 .sorting-arrow {
-  width: 11px;
-  height: 10px;
   margin-top: 13px;
-  background-repeat: no-repeat;
 }
 
 .sorting-arrow-up {
   margin-left: auto;
-  background-image: url(../img/icon-up-gray.svg);
-}
-
-.sorting-arrow-up:hover {
-  background-image: url(../img/icon-up-black.svg);
-}
-
-.sorting-arrow-up:focus {
-  background-image: url(../img/icon-up-blue.svg);
 }
 
 .sorting-arrow-down {
   margin-left: 12px;
-  background-image: url(../img/icon-down-gray.svg);
 }
 
-.sorting-arrow-down:hover {
-  background-image: url(../img/icon-down-black.svg);
+.sorting-arrow:hover path {
+  fill: var(--basic-black);
 }
-  
-.sorting-arrow-down:focus {
-  background-image: url(../img/icon-down-blue.svg);
+
+.sorting-arrow:focus path {
+  fill: var(--basic-blue);
 }
