@@ -17,6 +17,7 @@
   --gray-toggle: #ababab;
   --disabled-gray: #6A6A6A;
   --border-bottom-gray: #E5E5E5;
+  --button-gray: #A9A9A9;
 }
 
 body {
@@ -93,6 +94,7 @@ img {
   width: 1200px;
   height: 509px;
   background-image: url("../img/main-background-photo.jpg");
+  background-color: var(--basic-brown);
 }
 
 .main-image img {
@@ -348,7 +350,7 @@ img {
   font-size: 21px;
   line-height: 26px;
   padding: 30px 0;
-  margin-top: 32px;
+  margin-top: 29px;
   color: var(--basic-white);
   background-color: var(--basic-brown);
 }
@@ -367,6 +369,7 @@ img {
   width: 1199px;
   height: 473px;
   border: none;
+  background-color: lightgreen;
 }
   
 .hotel-search {
@@ -384,7 +387,7 @@ img {
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 }
 
-.hotel-search input {
+.hotel-search input[type=text] {
   box-sizing: border-box;
   font-weight: 700;
   font-size: 14px;
@@ -403,9 +406,22 @@ img {
   justify-content: space-between;
 }
 
-.dates input {
+.date-input {
   width: 346px;
   height: 38px;
+  text-transform: uppercase;
+}
+
+.arrival-date,
+.departure-date {
+  position: relative;
+}
+
+.calendar-img {
+  position: absolute;
+  right: 8px;
+  width: 21px;
+  height: 23px;
 }
 
 .departure-date {
@@ -436,9 +452,64 @@ img {
   margin-right: 27px;
 }
 
+.adults,
+.childs {
+  position: relative;
+}
+
 .adults label {
   margin-right: 40px;
 }
+
+.passengers-type .less {
+  position: absolute;
+  left: 110px;
+  width: 38px;
+  height: 38px;
+  border: none;
+  background-color: transparent;
+}
+
+.childs .less {
+  left: 65px;
+}
+
+.passengers-type .less::before {
+  position: absolute;
+  content: "";
+  left: 13px;
+  width: 12px;
+  height: 3px;
+  background-color: var(--button-gray);
+} 
+
+.passengers-type .more {
+  position: absolute;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  border: none;
+  background-color: transparent;
+}
+
+.passengers-type .more::before {
+  position: absolute;
+  content: "";
+  right: 13px;
+  width: 11px;
+  height: 3px;
+  background-color: var(--button-gray);
+} 
+
+.passengers-type .more::after {
+  position: absolute;
+  content: "";
+  right: 13px;
+  width: 11px;
+  height: 3px;
+  transform: rotate(-90deg);
+  background-color: var(--button-gray);
+} 
 
 .hotel-search-button {
   font-weight: 700;
@@ -495,6 +566,7 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
+  padding-top: 5px;
   padding-right: 75px;
   color: var(--black-copyright);
 }
@@ -813,18 +885,34 @@ img {
   background-image: url(../img/checkbox-off.svg);
 }
 
+.filter-input-checkbox:hover + label::before {
+  background-image: url(../img/checkbox-off.svg);
+}
+
+.filter-input-checkbox:focus + label::before {
+  background-image: url(../img/checkbox-off.svg);
+}
+
+.filter-input-checkbox:disabled + label::before {
+  background-image: url(../img/checkbox-off-disabled.svg);
+}
+
 .filter-input-checkbox:checked + label::before {
   width: 27px;
   height: 23px;
   background-image: url(../img/checkbox-on.svg);
 }
 
-.filter-input-checkbox:checked:disabled + label::before {
-  background-image: url(../img/checkbox-on-disabled.svg);
+.filter-input-checkbox:checked:hover + label::before {
+  background-image: url(../img/checkbox-on.svg);
 }
 
-.filter-input-checkbox:disabled + label::before {
-  background-image: url(../img/checkbox-off-disabled.svg);
+.filter-input-checkbox:checked:focus + label::before {
+  background-image: url(../img/checkbox-on.svg);
+}
+
+.filter-input-checkbox:checked:disabled + label::before {
+  background-image: url(../img/checkbox-on-disabled.svg);
 }
 
 .range-filter button {
@@ -869,6 +957,7 @@ img {
 }
 
 .range-controls .toggle {
+  display: block;
   position: absolute;
   top: 10px;
   left: 0;
@@ -1009,5 +1098,9 @@ img {
 }
 
 .sorting-arrow:focus path {
+  fill: var(--basic-blue);
+}
+
+.sorting-arrow:active path {
   fill: var(--basic-blue);
 }
