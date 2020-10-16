@@ -141,28 +141,26 @@
           <label for="arrival-date">Дата заезда:</label>
           <input class="date-input arrival-date-input" type="text" id="arrival-date" name="arrival-date"
             value="24 апреля 2017" />
-          <input class="calendar-img arrival-calendar" type="image" src="img/calendar.svg" width="21" height="23"
-            alt="Календарь заезда">
+          <button class="calendar-button arrival-calendar" type="button" aria-label="Календарь заезда"></button>
         </div>
         <div class="dates departure-date">
           <label for="departure-date">Дата выезда:</label>
           <input class="date-input departure-date-input" type="text" id="departure-date" name="departure-date"
             value="4 июля 2017" />
-          <input class="calendar-img departure-calendar" type="image" src="img/calendar.svg" width="21" height="23"
-            alt="Календарь выезда">
+          <button class="calendar-button departure-calendar" type="button" aria-label="Календарь выезда"></button>
         </div>
         <div class="passengers">
           <div class="passengers-type adults">
             <label for="adults">Взрослые:</label>
             <input type="text" id="adults" name="adults" pattern="^[ 0-9]+$" value="2" required />
-            <button class="less adults-less" type="button" aria-label="Уменьшить количество"></button>
-            <button class="more adults-more" type="button" aria-label="Увеличить количество"></button>
+            <button class="amount-button less adults-less" type="button" aria-label="Уменьшить количество"></button>
+            <button class="amount-button more adults-more" type="button" aria-label="Увеличить количество"></button>
           </div>
           <div class="passengers-type childs">
             <label for="childs">Дети:</label>
             <input type="text" id="childs" name="childs" pattern="^[ 0-9]+$" value="0" required />
-            <button class="less childs-less" type="button" aria-label="Уменьшить количество"></button>
-            <button class="more childs-more" type="button" aria-label="Увеличить количество"></button>
+            <button class="amount-button less childs-less" type="button" aria-label="Уменьшить количество"></button>
+            <button class="amount-button more childs-more" type="button" aria-label="Увеличить количество"></button>
           </div>
         </div>
         <button class="hotel-search-button" aria-label="Найти гостиницу">Найти</button>
