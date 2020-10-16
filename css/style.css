@@ -892,10 +892,7 @@ img {
 
 /* селекторы вложенностью больше двух, но в критериях написано "сложность селектора оправдана сложностью задачи" */
 
-.filter-input-checkbox:not(:checked) + label > .checkbox-frame-off {
-  display: block;
-}
-
+.filter-input-checkbox:not(:checked) + label > .checkbox-frame-off,
 .filter-input-checkbox:checked + label > .checkbox-frame-on {
   display: block;
 }
