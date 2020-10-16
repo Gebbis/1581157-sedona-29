@@ -902,8 +902,8 @@ img {
   outline-offset: 5px;
 }
 
-.filter-input-checkbox:disabled ~ .checkbox-frame-off path,
-.filter-input-checkbox:disabled ~ .checkbox-frame-on path {
+.filter-input-checkbox:disabled + label > .checkbox-frame-off path,
+.filter-input-checkbox:disabled + label > .checkbox-frame-on path {
   fill: var(--disabled-gray);
 }
 
