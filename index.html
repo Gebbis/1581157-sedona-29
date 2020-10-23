@@ -152,18 +152,18 @@
         <div class="passengers">
           <div class="passengers-type adults">
             <label for="adults">Взрослые:</label>
-            <input type="text" id="adults" name="adults" pattern="^[ 0-9]+$" value="2" required />
+            <input type="text" id="adults" name="adults" pattern="^[ 0-9]+$" />
             <button class="amount-button less adults-less" type="button" aria-label="Уменьшить количество"></button>
             <button class="amount-button more adults-more" type="button" aria-label="Увеличить количество"></button>
           </div>
           <div class="passengers-type childs">
             <label for="childs">Дети:</label>
-            <input type="text" id="childs" name="childs" pattern="^[ 0-9]+$" value="0" required />
+            <input type="text" id="childs" name="childs" pattern="^[ 0-9]+$" />
             <button class="amount-button less childs-less" type="button" aria-label="Уменьшить количество"></button>
             <button class="amount-button more childs-more" type="button" aria-label="Увеличить количество"></button>
           </div>
         </div>
-        <button class="hotel-search-button" aria-label="Найти гостиницу">Найти</button>
+        <button type="submit" class="hotel-search-button" aria-label="Найти гостиницу">Найти</button>
       </form>
     </section>
   </main>
