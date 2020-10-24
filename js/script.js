@@ -19,8 +19,14 @@ try {
 
 interestedSearchButton.addEventListener("click", function (evt) {
     evt.preventDefault();
-    hotelSearchForm.classList.remove("hotel-search-hide");
-    hotelSearchForm.classList.add("hotel-search-show");
+    if (hotelSearchForm.classList.contains("hotel-search-show")) {
+        hotelSearchForm.classList.remove("hotel-search-show");
+        hotelSearchForm.classList.add("hotel-search-hide");
+    } else {
+        hotelSearchForm.classList.remove("hotel-search-hide");
+        hotelSearchForm.classList.add("hotel-search-show");
+    }
+
     arrivalDate.focus();
 
     if (adultsStorage) {

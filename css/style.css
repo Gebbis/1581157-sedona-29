@@ -342,6 +342,7 @@ img {
 }
 
 .interested-search-button {
+  position: relative;
   box-sizing: border-box;
   width: 568px;
   text-transform: uppercase;
@@ -353,6 +354,7 @@ img {
   margin-top: 29px;
   color: var(--basic-white);
   background-color: var(--basic-brown);
+  z-index: 1;
 }
 
 .interested-search-button:hover {
