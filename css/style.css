@@ -373,9 +373,18 @@ img {
   background-color: lightgreen;
 }
 
-.map iframe {
+.map iframe,
+.map img {
   width: 100%;
+}
+
+.interactive-map {
+  display: none;
   border: none;
+}
+
+.map-show {
+  display: block;
 }
   
 .hotel-search {
@@ -424,7 +433,7 @@ img {
   }
 }
 
-.hotel-search-hide {
+.hide-element {
   display: none;
 }
 

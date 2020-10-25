@@ -3,8 +3,12 @@ const hotelSearchForm = document.querySelector(".hotel-search");
 const arrivalDate = hotelSearchForm.querySelector(".arrival-date-input");
 const adultsQuantity = hotelSearchForm.querySelector(".adults input");
 const childsQuantity = hotelSearchForm.querySelector(".childs input");
+const interactiveMap = document.querySelector(".interactive-map");
+const staticMap = document.querySelector(".map img");
 
-hotelSearchForm.classList.add("hotel-search-hide");
+hotelSearchForm.classList.add("hide-element");
+staticMap.classList.add("hide-element");
+interactiveMap.classList.add("map-show");
 
 var isStorageSupport = true;
 var adultsStorage = "";
@@ -21,9 +25,9 @@ interestedSearchButton.addEventListener("click", function (evt) {
     evt.preventDefault();
     if (hotelSearchForm.classList.contains("hotel-search-show")) {
         hotelSearchForm.classList.remove("hotel-search-show");
-        hotelSearchForm.classList.add("hotel-search-hide");
+        hotelSearchForm.classList.add("hide-element");
     } else {
-        hotelSearchForm.classList.remove("hotel-search-hide");
+        hotelSearchForm.classList.remove("hide-element");
         hotelSearchForm.classList.add("hotel-search-show");
     }
 
