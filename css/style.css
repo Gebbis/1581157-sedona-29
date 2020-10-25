@@ -385,7 +385,7 @@ img {
   line-height: 26px;
   width: 568px;
   top: 0;
-  left: 316px; /* если поставить выравнивае по центру через left: 50% и translateX, то почему-то появляется сбоку */
+  left: 316px;
   padding: 55px;
   background-color: var(--basic-white);
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
@@ -572,7 +572,7 @@ img {
   background-color: var(--blue-social-hover);
 }
 
-.hotel-search-button:focus { /* при нажатии появляется border, норм ли это? */
+.hotel-search-button:focus { 
   color: rgba(255, 255, 255, 0.3);
   background-color: var(--blue-social-focus);
 }
@@ -985,12 +985,9 @@ img {
   background-color: transparent;
 }
 
-/* чуть ниже opacity мешает .bar быть белым */
-
 .range-controls .scale {
   height: 2px;
-  background-color: var(--basic-white);
-  opacity: 0.3; 
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
