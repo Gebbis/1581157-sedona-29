@@ -580,7 +580,8 @@ img {
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: var(--white-footer);
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
 }
 
 .footer-contacts {
