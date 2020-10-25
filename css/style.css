@@ -374,6 +374,7 @@ img {
 }
 
 .map iframe {
+  width: 100%;
   border: none;
 }
   
@@ -473,6 +474,7 @@ img {
   border: none;
   right: 8px;
   background-image: url(../img/calendar.svg);
+  background-repeat: no-repeat;
 }
 
 .departure-date {
