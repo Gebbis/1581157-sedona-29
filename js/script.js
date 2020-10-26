@@ -1,6 +1,7 @@
 const interestedSearchButton = document.querySelector(".interested-search-button");
 const hotelSearchForm = document.querySelector(".hotel-search");
 const arrivalDate = hotelSearchForm.querySelector(".arrival-date-input");
+const departureDate = hotelSearchForm.querySelector(".departure-date-input");
 const adultsQuantity = hotelSearchForm.querySelector(".adults input");
 const childsQuantity = hotelSearchForm.querySelector(".childs input");
 const interactiveMap = document.querySelector(".interactive-map");
@@ -43,7 +44,7 @@ interestedSearchButton.addEventListener("click", function (evt) {
 });
 
 hotelSearchForm.addEventListener("submit", function (evt) {
-    if (!adultsQuantity.value && !childsQuantity.value) {
+    if (!adultsQuantity.value || !childsQuantity.value || !arrivalDate.value || !departureDate.value) {
         evt.preventDefault();
         hotelSearchForm.classList.add("hotel-search-error");
     } else {

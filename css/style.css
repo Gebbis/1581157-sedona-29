@@ -18,6 +18,7 @@
   --disabled-gray: #6A6A6A;
   --border-bottom-gray: #E5E5E5;
   --button-gray: #A9A9A9;
+  --input-hover-gray: #EBEBEB;
 }
 
 body {
@@ -60,7 +61,7 @@ body {
 .page-body {
   min-height: 100%;
   display: grid;
-  grid-template-rows: min-content 1fr 120px;
+  grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
 
@@ -114,6 +115,7 @@ img {
 .site-navigation {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 15px 0;
 }
@@ -271,11 +273,13 @@ img {
 
 .features-item-blue-right-img-list {
   display: flex;
+  flex-wrap: wrap;
   min-height: 256px;
 }
 
 .features-item-white-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .features-item-white {
@@ -458,6 +462,15 @@ img {
   background-color: var(--light-gray);
 }
 
+.hotel-search input:hover {
+  background-color: var(--input-hover-gray);
+}
+
+.hotel-search input:focus {
+  outline: 2px solid var(--border-bottom-gray);
+  background-color: var(--basic-white);
+}
+
 .dates {
   display: flex;
   flex-wrap: wrap;
@@ -477,13 +490,23 @@ img {
 }
 
 .calendar-button {
+  box-sizing: border-box;
   position: absolute;
   width: 21px;
   height: 23px;
+  padding: 0;
   border: none;
+  outline: none;
   right: 8px;
-  background-image: url(../img/calendar.svg);
-  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.calendar-button:hover path {
+  fill: var(--basic-black);
+}
+
+.calendar-button:focus path {
+  fill: var(--basic-blue);  
 }
 
 .departure-date {
@@ -553,6 +576,19 @@ img {
   background-color: var(--button-gray);
 } 
 
+.passengers-type .more:hover::before,
+.passengers-type .more:hover::after,
+.passengers-type .less:hover::before {
+  background-color: var(--basic-black);
+}
+
+.passengers-type .more:focus::before,
+.passengers-type .more:focus::after,
+.passengers-type .less:focus::before {
+  background-color: var(--basic-blue);
+}
+
+
 .passengers-type .less::before {
   left: 13px;
 }
@@ -615,14 +651,15 @@ img {
 }
 
 .footer-copyright {
-  box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
-  padding-top: 5px;
+  padding-top: 24px;
+  padding-bottom: 19px;
   padding-right: 75px;
   color: var(--black-copyright);
 }
@@ -660,6 +697,7 @@ img {
 .social-button {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 46px;
@@ -711,8 +749,9 @@ img {
 
 .sorted-list {
   list-style: none;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  display: flex;
+  flex: wrap;
+  flex-direction: column;
   padding: 0;
   margin: 0;
   row-gap: 1px;
@@ -720,10 +759,11 @@ img {
 
 .sorted-item {
   display: flex;
+  flex-wrap: wrap;
   font-weight: 400;
   font-size: 14px;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding-top: 23px;
+  padding-bottom: 29px;
   padding-left: 73px;
   padding-right: 71px;
   border-bottom: 1px solid var(--border-bottom-gray);
@@ -823,6 +863,7 @@ img {
   position: relative;
   display: block;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column-reverse;
   justify-content: space-between;
   padding-top: 6px;
@@ -872,14 +913,10 @@ img {
   display: none;
 }
 
-.main-hotels-page {
-  display: grid;
-  grid-template-rows: 217px 540px;
-}
-
+.main-hotels-page,
 .hotels-sorted-form {
   display: grid;
-  grid-template-rows: 1fr 450px;
+  grid-template-rows: min-content 1fr;
 }
 
 .hotels-filter-form {
@@ -893,6 +930,7 @@ img {
   color: var(--basic-white);
   background-image: url(../img/hotels-background-photo.jpg);
   background-color: var(--basic-blue);
+  background-repeat: no-repeat;
 }
 
 .hotels-filter-form ul {
@@ -903,6 +941,9 @@ img {
 }
 
 .hotels-filter-form fieldset {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   border: none;
   padding: 0;
   margin: 0;
@@ -1040,6 +1081,7 @@ img {
 .price-controls {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -1083,6 +1125,7 @@ img {
   flex-wrap: wrap;
   padding: 0 73px;
   padding-top: 27px;
+  padding-bottom: 25px;
   border-bottom: 1px solid var(--border-bottom-gray);
 }
 
@@ -1134,7 +1177,7 @@ img {
 }
 
 .sorting-arrow {
-  margin-top: 13px;
+  margin-top: 5px;
 }
 
 .sorting-arrow-up {
