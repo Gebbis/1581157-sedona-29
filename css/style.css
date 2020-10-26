@@ -900,11 +900,10 @@ img {
 }
 
 .sorted-item-rate {
-  box-sizing: border-box;
   width: 110px;
-  height: 27px;
   margin: 0;
-  padding-top: 2px;
+  padding-top: 4px;
+  padding-bottom: 2px;
   color: var(--gray-rating);
   background-color: var(--light-gray);
 }
